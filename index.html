@@ -18,13 +18,75 @@
     
       <p id="description">We are constantly striving to provide a homemade food service. This survey is part of the process. Please help us to do this by compliting this questionnaire:</p>
 
-      <form id="survey-form">
-        <label for="name">Name:</label>
-        <input type="text" name="name"></input>
-        <label for="email">Email:</label>
-        <input type="text" name="email"></input>
-      </form>
+       <form id="survey-form" action="https://www.google.com/" >
+
+         <fieldset>
+           <legend><strong>Fill in the information about your:</strong></legend>       
+           <label for="name" id="name-lable">Username:</label>
+           <input  type="text" id="name"  required placeholder="username" ></input><br><br>
+           <label for="email" id="email-label">Email:</label>
+           <input  type="email" id="email"  required placeholder="email" ></input><br><br> 
+           <label for="number" id="number-label">Age:</label>
+           <input  type="number" id="number" min="1" max="999"  required placeholder="1" ></input><br>     
+         </fieldset><br>
+
+         <fieldset>
+           <legend><strong>Which the option do you have?</strong></legend>
+           <label for="provider"></label>       
+           <input type="radio" name="provider" value="true" >Chef<br>
+           <label for="provider"></label> 
+           <input type="radio" name="provider" value="false" >Customer
+         </fieldset>   
+
+      
+         <p id="description"><strong>How easy is it to navigate our website?</strong></p>
+          <input id="vdiff" type="checkbox" name="website" value="vdiff">
+          <label for="vdiff">Very difficult</label><br>
+          <input id="diff" type="checkbox" name="website" value="diff">
+          <label for="diff">Difficult</label><br>
+          <input id="regular" type="checkbox" name="website" value="regular">
+          <label for="regularf">Regular</label><br>
+          <input id="easy" type="checkbox" name="website" value="easy">
+          <label for="easy">Easy</label><br>
+          <input id="veasy" type="checkbox" name="website" value="veasy">
+          <label for="veasy">Very easy</label><br><br>
+
+          <p id="description"><strong>Were you able to find the information you were looking for on our website?</strong></p>
+          <label for="provider"></label>       
+           <input type="radio" name="provider">Yes<br>
+           <label for="customer"></label> 
+           <input type="radio" name="customer">No<br><br>
+          
+
+         <fieldset>
+           <legend><strong>Questions for a customer:</strong></legend>
+           <p id="description">How many dishes did you order?</p>
+           
+           <input id="number" type="number"   placeholder="quantity" required>
+           <p id="description">Choose your favorite chef:</p>
+           <input list="dropdown" placeholder="choose here">
+           <datalist id="dropdown" >
+             <option value="Sara Petrosov"></option>
+             <option value="Super Chef"></option>            
+           </datalist>
+           <p id="description">How many times do you usually order dishes?</p>
+           <input list="times" placeholder="choose here">
+           <datalist id="times" >
+             <option value="More than three times a week"></option>
+             <option value="Less than three times a week"></option>            
+           </datalist>
+         </fieldset><br>
+
+         <p id="description"><strong>You can leave recommendations here:</strong></p>
+         <textarea   placeholder="Enter your recommendations here"></textarea>
+
+         <button id="submit" type="submit">Submit</button>
+
+
+       </form>
+
   </section>
 </body>
+<footer>&copy; 2018 Irina K.</footer>
 
 </html>
